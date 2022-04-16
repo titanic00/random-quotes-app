@@ -1,7 +1,8 @@
 import "./App.css";
+import { QuotesSection } from "../QuotesSection/quotesSection";
 
 function App() {
-  return <h1>Hello World!</h1>;
+  return <QuotesSection />
 }
 
 export default App;
