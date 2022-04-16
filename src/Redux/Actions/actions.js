@@ -9,7 +9,7 @@ export const getQuote = jsonObject => {
 
 export const getQuoteRequest = () => {
     return async dispatch => {
-        const request = await fetch('https://api.quotable.io/random?tags=technology,famous-quotes');
+        const request = await fetch('https://api.quotable.io/random');
         const requestJson = await request.json();
         dispatch(getQuote(requestJson));
     }

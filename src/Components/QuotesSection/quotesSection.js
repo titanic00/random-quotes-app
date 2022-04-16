@@ -1,25 +1,43 @@
 import { Quote } from "../Quote/quote";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getQuoteRequest } from "../../Redux/Actions/actions";
+import "./quoteSection.css";
 
 export function QuotesSection(props) {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const jsonObject = useSelector((state) => {
+    const { getQuoteReducer } = state;
+    return getQuoteReducer.quote;
+  });
 
-    const handleClick = () => {
-      dispatch(getQuoteRequest());
-    }
+  const handleClick = () => {
+    dispatch(getQuoteRequest());
+  };
 
-    useEffect(() => {
-        dispatch(getQuoteRequest());
-    }, []);
+  useEffect(() => {
+    dispatch(getQuoteRequest());
+  }, []);
 
-    return (
-      <div>
-        <Quote />
-        <button><i className="fa-brands fa-twitter"></i></button>
-        <button><i className="fa fa-tumblr"></i></button>
-        <button onClick={handleClick}>New quote</button>
+  return (
+    <div id="quote-box">
+      <Quote />
+      <div className="post-button">
+        <a
+          href={"https://twitter.com/intent/tweet?text=" + jsonObject.content}
+          target="_up"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
       </div>
-    );
-  }
+      <div className="post-button">
+        <a href="http://tumblr.com" target="blank">
+          <i className="fa fa-tumblr"></i>
+        </a>
+      </div>
+      <button id="new-quote" onClick={handleClick}>
+        New quote
+      </button>
+    </div>
+  );
+}

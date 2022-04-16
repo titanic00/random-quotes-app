@@ -1,0 +1,32 @@
+body {
+    background-color: aliceblue;
+}
+
+#quote-box {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+}
+
+#new-quote {
+    float: right;
+    text-align: center;
+    font-size: 1.2em;
+    height: 40px;
+    width: 30%;
+    background-color: aqua;
+    border: none;
+}
+
+.post-button {
+    float: left;
+    padding: 0px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5px;
+    height: 40px;
+    width: 60px;
+    background-color: aqua;
+}
