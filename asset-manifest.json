@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/random-quotes-app/static/css/main.2cfa538c.css",
-    "main.js": "/random-quotes-app/static/js/main.f9b828a3.js",
+    "main.css": "/random-quotes-app/static/css/main.5649cf50.css",
+    "main.js": "/random-quotes-app/static/js/main.8b9d4bfb.js",
     "static/js/787.9f7c887d.chunk.js": "/random-quotes-app/static/js/787.9f7c887d.chunk.js",
     "index.html": "/random-quotes-app/index.html",
-    "main.2cfa538c.css.map": "/random-quotes-app/static/css/main.2cfa538c.css.map",
-    "main.f9b828a3.js.map": "/random-quotes-app/static/js/main.f9b828a3.js.map",
+    "main.5649cf50.css.map": "/random-quotes-app/static/css/main.5649cf50.css.map",
+    "main.8b9d4bfb.js.map": "/random-quotes-app/static/js/main.8b9d4bfb.js.map",
     "787.9f7c887d.chunk.js.map": "/random-quotes-app/static/js/787.9f7c887d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cfa538c.css",
-    "static/js/main.f9b828a3.js"
+    "static/css/main.5649cf50.css",
+    "static/js/main.8b9d4bfb.js"
   ]
 }
