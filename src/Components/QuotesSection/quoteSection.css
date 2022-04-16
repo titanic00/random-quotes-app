@@ -4,6 +4,7 @@ body {
 
 #quote-box {
     width: 50%;
+    height: 50%;
     margin: 0 auto;
     position: relative;
     top: 300px;
@@ -13,7 +14,7 @@ body {
 
 #new-quote {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     height: 40px;
     width: 30%;
     background-color: aqua;
@@ -22,6 +23,7 @@ body {
     float: right;
     color: white;
     border-radius: 5px;
+    font-family: 'Lobster', cursive;
 }
 
 .post-button {
@@ -66,7 +68,7 @@ i {
     }
     #quote-box {
         width: 100%;
-        top: 150px;
+        position: initial;
     }
 }
 
@@ -78,6 +80,6 @@ i {
 
 @media only screen and (min-height: 600px) and (max-width: 550px) {
     #quote-box {
-        top: 150px;
+        top: 100px;
     }
 }
