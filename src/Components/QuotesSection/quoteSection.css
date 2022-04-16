@@ -18,6 +18,7 @@ body {
     background-color: aqua;
     border: none;
     margin: 10px;
+    float: right;
 }
 
 .post-button {
@@ -33,30 +34,35 @@ body {
     margin: 10px;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     #new-quote {
-        text-align: center;
-        font-size: 1.2em;
-        height: 40px;
         width: 90%;
-        background-color: aqua;
-        border: none;
-        margin: 10px;
+        float: none;
     }
-}
-
-@media only screen and (min-height: 400px) {
     .post-button {
         width: 90%;
     }
+    #quote-box {
+        width: 100%;
+    }
 }
 
-@media only screen and (min-height: 400px) and (max-width: 740px) {
+@media only screen and (max-width: 280px) {
+    #new-quote {
+        width: 90%;
+        height: 30%;
+        float: none;
+    }
+    .post-button {
+        width: 90%;
+    }
     #quote-box {
-        width: 60%;
-        margin: 0 auto;
-        position: relative;
-        top: 300px;
-        background-color: white;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+    #quote-box {
+        top: 130px;
     }
 }
