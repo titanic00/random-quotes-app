@@ -1,26 +1,27 @@
 body {
-    background-color: aliceblue;
+    background-color: black;
 }
 
 #quote-box {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     position: relative;
     top: 300px;
+    background-color: white;
 }
 
 #new-quote {
-    float: right;
     text-align: center;
     font-size: 1.2em;
     height: 40px;
     width: 30%;
     background-color: aqua;
     border: none;
+    margin: 10px;
 }
 
 .post-button {
-    float: left;
+    display: inline-block;
     padding: 0px;
     padding-top: 5px;
     text-align: center;
@@ -29,4 +30,33 @@ body {
     height: 40px;
     width: 60px;
     background-color: aqua;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 740px) {
+    #new-quote {
+        text-align: center;
+        font-size: 1.2em;
+        height: 40px;
+        width: 90%;
+        background-color: aqua;
+        border: none;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-height: 400px) {
+    .post-button {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-height: 400px) and (max-width: 740px) {
+    #quote-box {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        top: 300px;
+        background-color: white;
+    }
 }

@@ -3,7 +3,7 @@ import { QuotesSection } from "../QuotesSection/quotesSection";
 
 function App() {
   return (
-    <div>
+    <div className="container-fluid">
       <QuotesSection />
     </div>
   );

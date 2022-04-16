@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import './quote.css';
 
 export function Quote(props) {
     const jsonObject = useSelector(state => {
@@ -7,9 +8,9 @@ export function Quote(props) {
     });
 
     return (
-        <div>
+        <div id="quote-section">
             <h1 id="text">{jsonObject.content}</h1>
-            <h1 id="author">{jsonObject.author}</h1>
+            <h2 id="author">-{jsonObject.author}</h2>
         </div>
     )
 }

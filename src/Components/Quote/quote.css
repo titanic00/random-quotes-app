@@ -1,0 +1,9 @@
+#text,
+#author {
+    font-family: 'Lobster', cursive;
+    margin: 10px;
+}
+
+#author {
+    text-align: right;
+}
