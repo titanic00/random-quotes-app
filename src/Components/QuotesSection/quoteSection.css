@@ -19,6 +19,7 @@ body {
     border: none;
     margin: 10px;
     float: right;
+    color: white;
 }
 
 .post-button {
@@ -32,6 +33,10 @@ body {
     width: 60px;
     background-color: aqua;
     margin: 10px;
+}
+
+i {
+    color: white;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {

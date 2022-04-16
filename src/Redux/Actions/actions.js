@@ -1,9 +1,15 @@
-import { GET_QUOTE } from "../Types/types";
+import { GET_QUOTE, GET_COLOR } from "../Types/types";
 
 export const getQuote = jsonObject => {
     return {
         type: GET_QUOTE,
         jsonObject
+    }
+}
+
+export const getColor = () => {
+    return {
+        type: GET_COLOR
     }
 }
 

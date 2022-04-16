@@ -7,10 +7,15 @@ export function Quote(props) {
         return getQuoteReducer.quote;
     });
 
+    const color = useSelector((state) => {
+        const { getColorReducer } = state;
+        return getColorReducer.color;
+      });
+
     return (
         <div id="quote-section">
-            <h1 id="text">{jsonObject.content}</h1>
-            <h2 id="author">-{jsonObject.author}</h2>
+            <h1 id="text" style={{color: color}}>{jsonObject.content}</h1>
+            <h2 id="author" style={{color: color}}>-{jsonObject.author}</h2>
         </div>
     )
 }
